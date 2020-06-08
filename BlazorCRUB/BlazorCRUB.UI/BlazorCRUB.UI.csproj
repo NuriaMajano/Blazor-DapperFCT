@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlazerCRUB.Data.Dapper\BlazerCRUB.Data.Dapper.csproj" />
+    <ProjectReference Include="..\BlazerCRUB.Data.Dapper\BlazorCRUB.Data.Dapper.csproj" />
     <ProjectReference Include="..\BlazorCRUB.Model\BlazorCRUB.Model.csproj" />
   </ItemGroup>
 

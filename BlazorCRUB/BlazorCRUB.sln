@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUB.UI", "BlazorCRUB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUB.Model", "BlazorCRUB.Model\BlazorCRUB.Model.csproj", "{68B109B8-4474-438D-BB12-01F46E70811F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazerCRUB.Data.Dapper", "BlazerCRUB.Data.Dapper\BlazerCRUB.Data.Dapper.csproj", "{FB2A9879-02D5-454E-B502-B9511B0C9D27}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUB.Data.Dapper", "BlazerCRUB.Data.Dapper\BlazorCRUB.Data.Dapper.csproj", "{FB2A9879-02D5-454E-B502-B9511B0C9D27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

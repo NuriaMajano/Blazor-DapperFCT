@@ -1,7 +1,34 @@
 ﻿@page "/filmsdetails"
+@using Model
 
 <h3>FilmDetails</h3>
-
+<EditForm Model="@film">
+    <table class="table">
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" @bind="film.Title" /></td>
+        </tr>
+        <tr>
+            <td>Director:</td>
+            <td><input type="text" @bind="film.Director" /></td>
+        </tr>
+        <tr>
+            <td>Release Date:</td>
+            <td><input type="text" @bind="film.ReleaseDate" /></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <input type="submit" value="Save" />
+                <input type="button" value="Cancel" @onclick="CancelFilm" />
+            </td>
+        </tr>
+    </table>
+</EditForm>
 @code {
+    Film film = new Film();
 
+    protected void CancelFilm()
+    {
+
+    }
 }
