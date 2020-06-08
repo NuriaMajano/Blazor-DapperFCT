@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlazorCRUB.Data.Dapper.Repositories
 {
-    interface IFilmRepository
+    public interface IFilmRepository
     {
         Task<IEnumerable<Film>> GetAllFilms();
         Task<Film> GetFilmDetails(int id);

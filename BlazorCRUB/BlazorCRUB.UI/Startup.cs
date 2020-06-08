@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BlazorCRUB.UI.Data;
+using BlazorCRUB.UI.Interfaces;
+using BlazorCRUB.UI.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
@@ -27,6 +30,10 @@ namespace BlazorCRUB.UI
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddScoped<IFilmService, FilmService>();
+
+            var sqlConnectionConfiguration = new SqlConfiguration(Configuration.GetConnectionString("SqlConnection"));
+            services.AddSingleton(sqlConnectionConfiguration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

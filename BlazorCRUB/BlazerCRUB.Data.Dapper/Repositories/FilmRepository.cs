@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BlazorCRUB.Data.Dapper.Repositories
 {
-    class FilmRepository : IFilmRepository
+    public class FilmRepository : IFilmRepository
     {
         private string ConnectionString;
         public FilmRepository(string connectionString)
