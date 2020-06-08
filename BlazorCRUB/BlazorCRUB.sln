@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUB.UI", "BlazorCRUB.UI\BlazorCRUB.UI.csproj", "{6901C560-1865-40F1-9D82-67745C13EEEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCRUB.Model", "BlazorCRUB.Model\BlazorCRUB.Model.csproj", "{68B109B8-4474-438D-BB12-01F46E70811F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazerCRUB.Data.Dapper", "BlazerCRUB.Data.Dapper\BlazerCRUB.Data.Dapper.csproj", "{FB2A9879-02D5-454E-B502-B9511B0C9D27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6901C560-1865-40F1-9D82-67745C13EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6901C560-1865-40F1-9D82-67745C13EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6901C560-1865-40F1-9D82-67745C13EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B109B8-4474-438D-BB12-01F46E70811F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B109B8-4474-438D-BB12-01F46E70811F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B109B8-4474-438D-BB12-01F46E70811F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B109B8-4474-438D-BB12-01F46E70811F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB2A9879-02D5-454E-B502-B9511B0C9D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2A9879-02D5-454E-B502-B9511B0C9D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2A9879-02D5-454E-B502-B9511B0C9D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2A9879-02D5-454E-B502-B9511B0C9D27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
