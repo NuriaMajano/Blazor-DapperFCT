@@ -32,7 +32,7 @@ namespace BlazorCRUB.UI.Services
 
         public Task<Film> GetDetails(int id)
         {
-            throw new NotImplementedException();
+            return _filmRepository.GetFilmDetails(id);
         }
 
         public Task<bool> SaveFilm(Film film)
@@ -40,7 +40,7 @@ namespace BlazorCRUB.UI.Services
             if (film.id == 0)
                 return _filmRepository.InsertFilm(film);
             else
-                return null;
+                return _filmRepository.UpdateFilm(film);
         }
     }
 }
