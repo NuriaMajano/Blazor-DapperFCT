@@ -27,7 +27,7 @@ namespace BlazorCRUB.UI.Services
 
         public Task<IEnumerable<Film>> GetAllFilms()
         {
-            throw new NotImplementedException();
+            return _filmRepository.GetAllFilms();
         }
 
         public Task<Film> GetDetails(int id)
