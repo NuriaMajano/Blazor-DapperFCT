@@ -21,9 +21,12 @@ namespace BlazorCRUB.Data.Dapper.Repositories
             return new SqlConnection(ConnectionString);
         }
 
-        public Task<bool> DeleteFilm(int id)
+        public async Task<bool> DeleteFilm(int id)
         {
-            throw new NotImplementedException();
+            var db = dbConnection();
+            var sql = @"DELETE FROM Films WHERE id = @id";
+            var result = await db.ExecuteAsync(sql.ToString(), new { id = id });
+            return result > 0;
         }
 
         public async Task<IEnumerable<Film>> GetAllFilms()

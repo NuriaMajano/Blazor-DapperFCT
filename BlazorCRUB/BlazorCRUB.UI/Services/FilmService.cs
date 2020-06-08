@@ -22,7 +22,7 @@ namespace BlazorCRUB.UI.Services
 
         public Task<bool> DeleteFilm(int id)
         {
-            throw new NotImplementedException();
+            return _filmRepository.DeleteFilm(id);
         }
 
         public Task<IEnumerable<Film>> GetAllFilms()
